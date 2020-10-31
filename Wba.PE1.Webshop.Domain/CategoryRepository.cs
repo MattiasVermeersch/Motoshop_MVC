@@ -29,7 +29,7 @@ namespace PE1.Webshop.Domain
 
         public Category GetCategoriesById(long categoryId)
         {
-            return Categories.FirstOrDefault(c => c.Id == categoryId)
+            return Categories.FirstOrDefault(c => c.Id == categoryId);
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Wba.PE1.Webshop.Web.Models;
-using Wba.PE1.Webshop.Domain;
+using PE1.Webshop.Domain;
 
 namespace Wba.PE1.Webshop.Web.Controllers
 {
