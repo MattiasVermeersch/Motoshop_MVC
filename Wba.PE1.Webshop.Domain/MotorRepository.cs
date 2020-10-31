@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Schema;
 
-namespace Wba.PE1.Webshop.Domain
+namespace PE1.Webshop.Domain
 {
     public class MotorRepository
     {
-        public IEnumerable<Motor> GetMotors()
+        public IEnumerable<Motor> Motors { get; set; }
+        public CategoryRepository Categories { get; set; }
+        public BrandRepository Brands { get; set; }
+        public MotorRepository()
         {
             //https://www.motorcyclelegalfoundation.com/types-of-motorcycles/ types of motorcycles
-            return new List<Motor>
+            Motors = new List<Motor>
             {
-                new Motor
-                { 
-                    
-                }
+                new Motor{}
             };
             
         }

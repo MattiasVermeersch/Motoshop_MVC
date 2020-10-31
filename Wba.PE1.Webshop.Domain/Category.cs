@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace Wba.PE1.Webshop.Domain
+namespace PE1.Webshop.Domain
 {
     public class Category
     {
