@@ -17,17 +17,17 @@ namespace PE1.Webshop.Domain
                 new Category{Id=1, Name="Standard"},
                 new Category{Id=2, Name="Cruiser"},
                 new Category{Id=3, Name="Sport Bike"},
-                new Category{Id=4, Name="Touring"}
+                new Category{Id=4, Name="Touring"},
+                new Category{Id=5, Name="Off-road"}
                 //,
                 //new Category{Id=5, Name="Sport Touring"},
                 //new Category{Id=6, Name="Dual Sport"},
                 //new Category{Id=7, Name="Scooter"},
-                //new Category{Id=8, Name="Moped"},
-                //new Category{Id=9, Name="Off-road"}
+                //new Category{Id=8, Name="Moped"}
             };
         }
 
-        public Category GetCategoriesById(long categoryId)
+        public Category GetCategoryById(long categoryId)
         {
             return Categories.FirstOrDefault(c => c.Id == categoryId);
         }

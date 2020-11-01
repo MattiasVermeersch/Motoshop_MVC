@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace PE1.Webshop.Domain
@@ -16,7 +17,7 @@ namespace PE1.Webshop.Domain
                 new Brand
                 {
                     Id=1, 
-                    Name="Honda Motor",
+                    Name="Honda",
                     Contactpage = "https://www.fl.honda.be/motorcycles/useful-links/contact-us.html",
                     Homepage = "https://www.fl.honda.be/motorcycles.html"
                 },
@@ -44,11 +45,15 @@ namespace PE1.Webshop.Domain
                 new Brand
                 {
                     Id=5,
-                    Name="BMW Motorrad",
+                    Name="BMW",
                     Contactpage="https://www.bmw-motorrad.be/nl/public-pool/content-pool/contact.html",
                     Homepage="https://www.bmw-motorrad.be/nl/models/modeloverview.html"
                 }
             };
+        }
+        public Brand GetBrandById(long brandId)
+        {
+            return Brands.FirstOrDefault(s => s.Id == brandId);
         }
     }
 }
