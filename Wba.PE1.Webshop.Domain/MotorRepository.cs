@@ -169,6 +169,7 @@ namespace PE1.Webshop.Domain
                         "~/images/honda/gold_wing_tour/black.jpg"
                     }
                 },
+                //Suzuki motors
                 new Motor
                 {
                     Id=7,
@@ -309,6 +310,366 @@ namespace PE1.Webshop.Domain
                         "~/images/suzuki/v-strom_1050xt/orange.jpg",
                         "~/images/suzuki/v-strom_1050xt/yellow.jpg",
                         "~/images/suzuki/v-strom_1050xt/black.jpg"
+                    }
+                },
+                //Kawasaki motors
+                new Motor
+                {
+                    Id=13,
+                    Name="Ninja H2 Carbon",
+                    Brand=BrandRepository.GetBrandById(3),
+                    Category=CategoryRepository.GetCategoryById(3),
+                    Colors= new List<string>
+                    {
+                        "Black"
+                    },
+                    Year=2018,
+                    Cilinder=998,
+                    Power="150.8 kW (205pk) / 11000 tpm",
+                    Fueltank=17,
+                    Fueltype="Benzine",
+                    Price=31500,
+                    Image = new List<string>
+                    {
+                        "~/images/kawasaki/ninja_h2_carbon/black.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=14,
+                    Name="Ninja ZX-10R SE",
+                    Brand=BrandRepository.GetBrandById(3),
+                    Category=CategoryRepository.GetCategoryById(3),
+                    Colors= new List<string>
+                    {
+                        "Silver"
+                    },
+                    Year=2018,
+                    Cilinder=998,
+                    Power="149.3 kW (203pk) / 13500 tpm",
+                    Fueltank=17,
+                    Fueltype="Benzine",
+                    Price=23499,
+                    Image = new List<string>
+                    {
+                        "~/images/kawasaki/ninja_zx-10r_se/silver.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=15,
+                    Name="Vulcan S Cafe Tourer",
+                    Brand=BrandRepository.GetBrandById(3),
+                    Category=CategoryRepository.GetCategoryById(2),
+                    Colors= new List<string>
+                    {
+                        "Orange"
+                    },
+                    Year=2019,
+                    Cilinder=649,
+                    Power="45 kW (61pk) / 7500 tpm",
+                    Fueltank=14,
+                    Fueltype="Benzine",
+                    Price=999,
+                    Image = new List<string>
+                    {
+                        "~/images/kawasaki/vulcan_s_cafe_tourer/orange.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=16,
+                    Name="Vulcan S Performance",
+                    Brand=BrandRepository.GetBrandById(3),
+                    Category=CategoryRepository.GetCategoryById(2),
+                    Colors= new List<string>
+                    {
+                        "Grey",
+                        "Green"
+                    },
+                    Year=2019,
+                    Cilinder=1700,
+                    Power="45 kW (61pk) / 7500 tpm",
+                    Fueltank=14,
+                    Fueltype="Benzine",
+                    Price=7649,
+                    Image = new List<string>
+                    {
+                        "~/images/kawasaki/vulcan_s_performance/grey.jpg",
+                        "~/images/kawasaki/vulcan_s_performance/green.jpg"
+                    }
+                },
+                //Harley-Davidson motors
+                new Motor
+                {
+                    Id=17,
+                    Name="Fat Bob",
+                    Brand=BrandRepository.GetBrandById(4),
+                    Category=CategoryRepository.GetCategoryById(2),
+                    Colors= new List<string>
+                    {
+                        "Red",
+                        "Black"
+                    },
+                    Year=2020,
+                    Cilinder=1746,
+                    Power="69 kW (93pk) / 5020 tpm",
+                    Fueltank=14,
+                    Fueltype="Benzine",
+                    Price=18100,
+                    Image = new List<string>
+                    {
+                        "~/images/harley_davidson/fat_bob/red.jpg",
+                        "~/images/harley_davidson/fat_bob/black.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=18,
+                    Name="Low Rider S",
+                    Brand=BrandRepository.GetBrandById(4),
+                    Category=CategoryRepository.GetCategoryById(2),
+                    Colors= new List<string>
+                    {
+                        "Black",
+                        "Silver"
+                    },
+                    Year=2020,
+                    Cilinder=1868,
+                    Power="93pk / 5020 tpm",
+                    Fueltank=18.9,
+                    Fueltype="Benzine",
+                    Price=20000,
+                    Image = new List<string>
+                    {
+                        "~/images/harley_davidson/low_rider_s/black.jpg",
+                        "~/images/harley_davidson/low_rider_s/silver.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=19,
+                    Name="Fat Boy",
+                    Brand=BrandRepository.GetBrandById(4),
+                    Category=CategoryRepository.GetCategoryById(2),
+                    Colors= new List<string>
+                    {
+                        "Red",
+                        "Silver",
+                        "Blue",
+                        "Black"
+                    },
+                    Year=2020,
+                    Cilinder=1868,
+                    Power="69kW (93pk) / 5020 tpm",
+                    Fueltank=18.9,
+                    Fueltype="Benzine",
+                    Price=22200,
+                    Image = new List<string>
+                    {
+                        "~/images/harley_davidson/fat_boy/red.jpg",
+                        "~/images/harley_davidson/fat_boy/silver.jpg",
+                        "~/images/harley_davidson/fat_boy/blue.jpg",
+                        "~/images/harley_davidson/fat_boy/black.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=20,
+                    Name="Softail Standard",
+                    Brand=BrandRepository.GetBrandById(4),
+                    Category=CategoryRepository.GetCategoryById(2),
+                    Colors= new List<string>
+                    {
+                        "Black"
+                    },
+                    Year=2020,
+                    Cilinder=1746,
+                    Power="N/A",
+                    Fueltank=13.2,
+                    Fueltype="Benzine",
+                    Price=13795,
+                    Image = new List<string>
+                    {
+                        "~/images/harley_davidson/softail_standard/black.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=21,
+                    Name="Road King",
+                    Brand=BrandRepository.GetBrandById(4),
+                    Category=CategoryRepository.GetCategoryById(4),
+                    Colors= new List<string>
+                    {
+                        "Black",
+                        "Red",
+                        "White"
+                    },
+                    Year=2020,
+                    Cilinder=1746,
+                    Power="N/A",
+                    Fueltank=22.7,
+                    Fueltype="Benzine",
+                    Price=25100,
+                    Image = new List<string>
+                    {
+                        "~/images/harley_davidson/road_king/black.jpg",
+                        "~/images/harley_davidson/road_king/red.jpg",
+                        "~/images/harley_davidson/road_king/white.jpg"
+                    }
+                },
+                //BMW
+                new Motor
+                {
+                    Id=22,
+                    Name="F 900 XR",
+                    Brand=BrandRepository.GetBrandById(5),
+                    Category=CategoryRepository.GetCategoryById(5),
+                    Colors= new List<string>
+                    {
+                        "Red",
+                        "White",
+                        "Yellow"
+                    },
+                    Year=2020,
+                    Cilinder=895,
+                    Power="77kW (105pk) / 8500 tpm",
+                    Fueltank=15.5,
+                    Fueltype="Benzine",
+                    Price=11450,
+                    Image = new List<string>
+                    {
+                        "~/images/bmw/f_900_xr/red.jpg",
+                        "~/images/bmw/f_900_xr/white.jpg",
+                        "~/images/bmw/f_900_xr/yellow.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=23,
+                    Name="R 1250 GS",
+                    Brand=BrandRepository.GetBrandById(5),
+                    Category=CategoryRepository.GetCategoryById(5),
+                    Colors= new List<string>
+                    {
+                        "Black",
+                        "White",
+                        "Blue",
+                        "Yellow"
+                    },
+                    Year=2020,
+                    Cilinder=1254,
+                    Power="100kW (136pk) / 7750 tpm",
+                    Fueltank=20,
+                    Fueltype="Benzine",
+                    Price=17290,
+                    Image = new List<string>
+                    {
+                        "~/images/bmw/r_1250_gs/black.jpg",
+                        "~/images/bmw/r_1250_gs/white.jpg",
+                        "~/images/bmw/r_1250_gs/blue.jpg",
+                        "~/images/bmw/r_1250_gs/yellow.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=24,
+                    Name="K 1600 GTL",
+                    Brand=BrandRepository.GetBrandById(5),
+                    Category=CategoryRepository.GetCategoryById(4),
+                    Colors= new List<string>
+                    {
+                        "Brown",
+                        "Black",
+                        "White"
+                    },
+                    Year=2020,
+                    Cilinder=1649,
+                    Power="118kW (160pk) / 7750 tpm",
+                    Fueltank=26.5,
+                    Fueltype="Benzine",
+                    Price=28300,
+                    Image = new List<string>
+                    {
+                        "~/images/bmw/k_1600_gtl/brown.jpg",
+                        "~/images/bmw/k_1600_gtl/black.jpg",
+                        "~/images/bmw/k_1600_gtl/white.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=25,
+                    Name="R 1250 RT",
+                    Brand=BrandRepository.GetBrandById(5),
+                    Category=CategoryRepository.GetCategoryById(4),
+                    Colors= new List<string>
+                    {
+                        "Brown",
+                        "Blue",
+                        "Silver"
+                    },
+                    Year=2020,
+                    Cilinder=1254,
+                    Power="100kW (136pk) / 7750 tpm",
+                    Fueltank=25,
+                    Fueltype="Benzine",
+                    Price=19720,
+                    Image = new List<string>
+                    {
+                        "~/images/bmw/r_1250_rt/brown.jpg",
+                        "~/images/bmw/r_1250_rt/blue.jpg",
+                        "~/images/bmw/r_1250_rt/silver.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=26,
+                    Name="K 1600 B",
+                    Brand=BrandRepository.GetBrandById(5),
+                    Category=CategoryRepository.GetCategoryById(4),
+                    Colors= new List<string>
+                    {
+                        "Silver",
+                        "Red",
+                        "Black"
+                    },
+                    Year=2020,
+                    Cilinder=1649,
+                    Power="118kW (160pk) / 7750 tpm",
+                    Fueltank=26.5,
+                    Fueltype="Benzine",
+                    Price=26150,
+                    Image = new List<string>
+                    {
+                        "~/images/bmw/k_1600_b/silver.jpg",
+                        "~/images/bmw/k_1600_b/red.jpg",
+                        "~/images/bmw/k_1600_b/black.jpg"
+                    }
+                },
+                new Motor
+                {
+                    Id=27,
+                    Name="R 1250 RS",
+                    Brand=BrandRepository.GetBrandById(5),
+                    Category=CategoryRepository.GetCategoryById(3),
+                    Colors= new List<string>
+                    {
+                        "Black",
+                        "Yellow",
+                        "Blue"
+                    },
+                    Year=2020,
+                    Cilinder=1254,
+                    Power="100kW / 7750 tpm",
+                    Fueltank=18,
+                    Fueltype="Benzine",
+                    Price=15260,
+                    Image = new List<string>
+                    {
+                        "~/images/bmw/r_1250_rs/black.jpg",
+                        "~/images/bmw/r_1250_rs/yellow.jpg",
+                        "~/images/bmw/r_1250_rs/blue.jpg"
                     }
                 }
             };
