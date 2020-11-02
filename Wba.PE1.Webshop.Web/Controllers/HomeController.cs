@@ -5,15 +5,42 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Wba.PE1.Webshop.Web.Models;
-using Wba.PE1.Webshop.Domain;
+using PE1.Webshop.Domain;
+using pe1.Webshop.Web.ViewModels;
 
 namespace Wba.PE1.Webshop.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly CategoryRepository categoryRepository;
+        private readonly BrandRepository brandRepository;
+        private readonly MotorRepository motorRepository;
+
+        public HomeController()
+        {
+            categoryRepository = new CategoryRepository();
+            brandRepository = new BrandRepository();
+            motorRepository = new MotorRepository();
+        }
         public IActionResult Index()
         {
+            ViewBag.Title = "Webshop Motoren";
             return View();
+        }
+
+        [Route("/")]
+        [Route("home")]
+        public IActionResult ShowMotors()
+        {
+            //declaring view model
+            var viewModel = new HomeShowMotorsVM();
+
+            //fill the viewmodel with motors to display on home screen
+            viewModel.Motors = motorRepository.Motors;
+            viewModel.Brands = brandRepository.Brands;
+            viewModel.Categories = categoryRepository.Categories;
+
+            return View(viewModel);
         }
 
         public IActionResult About()

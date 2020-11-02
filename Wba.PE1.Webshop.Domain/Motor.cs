@@ -5,20 +5,21 @@ using System.Drawing;
 using System.Dynamic;
 using System.Text;
 
-namespace Wba.PE1.Webshop.Domain
+namespace PE1.Webshop.Domain
 {
     public class Motor
     {
-        public int Number { get; set; }
-        public int Year { get; set; }
-        public string Brand { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
+        public Brand Brand { get; set; }
         public Category Category { get; set; }
-        public IEnumerable<Color> Color { get; set; }
+        public IEnumerable<string> Colors { get; set; }
+        public int Year { get; set; }
         public int Cilinder { get; set; }
-        public int Power { get; set; }
-        public int Fuelconsumption { get; set; }
-        public int Fueltank { get; set; }
-        public string Chassistype { get; set; }
+        public string Power { get; set; }
+        public double Fueltank { get; set; }
+        public string Fueltype { get;set; }
+        public double Price { get; set; }
+        public IEnumerable<string> Image { get; set; }
     }
 }
