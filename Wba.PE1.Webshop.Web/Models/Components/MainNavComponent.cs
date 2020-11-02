@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace pe1.Webshop.Web.Models.Components
 {
+    [ViewComponent(Name = "MainNavigation")]
     public class MainNavComponent : ViewComponent
     {
         public async Task<IViewComponentResult> InvokeAsync()

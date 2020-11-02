@@ -35,3 +35,11 @@ body {
         display: none;
     }
 }
+
+h1 .category {
+    font-size: 48px;
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}

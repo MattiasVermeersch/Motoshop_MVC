@@ -1,7 +1,17 @@
 ﻿@model pe1.Webshop.Web.ViewModels.HomeShowCategoriesVM
 @{
-    ViewData["Title"] = "ShowCategories";
+    ViewData["Title"] = "Categories";
 }
 
-<h2>Categories</h2>
+<h1 class="category">Categories</h1>
 
+@foreach(var category in Model.Categories)
+{
+    <ul class="list-group">
+        <li class="list-group-item" style="border: none">
+            <p class="text-capitalize" style="font-size:36px; font-weight:900">@category.Name</p>
+            <center><img src="@category.Image" alt="@category.Name" /></center>
+            <p style="font-size: 24px">@category.Description</p>
+        </li>
+    </ul>
+}
