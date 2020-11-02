@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Wba.PE1.Webshop.Domain\PE1.Webshop.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Shared\Components\MainNavigation\" />
+  </ItemGroup>
+
 </Project>

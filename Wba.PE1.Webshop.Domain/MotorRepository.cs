@@ -40,10 +40,10 @@ namespace PE1.Webshop.Domain
                     Price=6399,
                     Image=new List<string>
                     {
-                        "~/images/honda/cb500f/red.jpg",
-                        "~/images/honda/cb500f/black.jpg",
-                        "~/images/honda/cb500f/blue.jpg",
-                        "~/images/honda/cb500f/orange.jpg"
+                        "/images/honda/cb500f/red.jpg",
+                        "/images/honda/cb500f/black.jpg",
+                        "/images/honda/cb500f/blue.jpg",
+                        "/images/honda/cb500f/orange.jpg"
                     }
                 },
                 new Motor
@@ -67,10 +67,10 @@ namespace PE1.Webshop.Domain
                     Price=4399,
                     Image=new List<string>
                     {
-                        "~/images/honda/cb125r/black.jpg",
-                        "~/images/honda/cb125r/grey.jpg",
-                        "~/images/honda/cb125r/white.jpg",
-                        "~/images/honda/cb125r/red.jpg"
+                        "/images/honda/cb125r/black.jpg",
+                        "/images/honda/cb125r/grey.jpg",
+                        "/images/honda/cb125r/white.jpg",
+                        "/images/honda/cb125r/red.jpg"
                     }
                 },
                 new Motor
@@ -93,9 +93,9 @@ namespace PE1.Webshop.Domain
                     Price=13599,
                     Image = new List<string>
                     {
-                        "~/images/honda/cb1000r/white.jpg",
-                        "~/images/honda/cb1000r/black.jpg",
-                        "~/images/honda/cb1000r/red.jpg"
+                        "/images/honda/cb1000r/white.jpg",
+                        "/images/honda/cb1000r/black.jpg",
+                        "/images/honda/cb1000r/red.jpg"
                     }
                 },
                 new Motor
@@ -118,9 +118,9 @@ namespace PE1.Webshop.Domain
                     Price=6899,
                     Image = new List<string>
                     {
-                        "~/images/honda/cbr500r/red.jpg",
-                        "~/images/honda/cbr500r/black.jpg",
-                        "~/images/honda/cbr500r/white.jpg"
+                        "/images/honda/cbr500r/red.jpg",
+                        "/images/honda/cbr500r/black.jpg",
+                        "/images/honda/cbr500r/white.jpg"
                     }
                 },
                 new Motor
@@ -142,8 +142,8 @@ namespace PE1.Webshop.Domain
                     Price=21699,
                     Image = new List<string>
                     {
-                        "~/images/honda/cbr1000rr-r_fireblade/red.jpg",
-                        "~/images/honda/cbr1000rr-r_fireblade/black.jpg"
+                        "/images/honda/cbr1000rr-r_fireblade/red.jpg",
+                        "/images/honda/cbr1000rr-r_fireblade/black.jpg"
                     }
                 },
                 new Motor
@@ -165,8 +165,8 @@ namespace PE1.Webshop.Domain
                     Price=32999,
                     Image = new List<string>
                     {
-                        "~/images/honda/gold_wing_tour/red.jpg",
-                        "~/images/honda/gold_wing_tour/black.jpg"
+                        "/images/honda/gold_wing_tour/red.jpg",
+                        "/images/honda/gold_wing_tour/black.jpg"
                     }
                 },
                 //Suzuki motors
@@ -189,8 +189,8 @@ namespace PE1.Webshop.Domain
                     Price=3999,
                     Image = new List<string>
                     {
-                        "~/images/suzuki/gsx-s125/red.jpg",
-                        "~/images/suzuki/gsx-s125/blue.jpg"
+                        "/images/suzuki/gsx-s125/red.jpg",
+                        "/images/suzuki/gsx-s125/blue.jpg"
                     }
                 },
                 new Motor
@@ -212,8 +212,8 @@ namespace PE1.Webshop.Domain
                     Price=13999,
                     Image = new List<string>
                     {
-                        "~/images/suzuki/katana/silver.jpg",
-                        "~/images/suzuki/katana/black.jpg"
+                        "/images/suzuki/katana/silver.jpg",
+                        "/images/suzuki/katana/black.jpg"
                     }
                 },
                 new Motor
@@ -234,7 +234,7 @@ namespace PE1.Webshop.Domain
                     Price=4499,
                     Image = new List<string>
                     {
-                        "~/images/suzuki/gsx-r125/blue.jpg"
+                        "/images/suzuki/gsx-r125/blue.jpg"
                     }
                 },
                 new Motor
@@ -257,9 +257,9 @@ namespace PE1.Webshop.Domain
                     Price=16999,
                     Image = new List<string>
                     {
-                        "~/images/suzuki/gsx-r1000/white.jpg",
-                        "~/images/suzuki/gsx-r1000/blue.jpg",
-                        "~/images/suzuki/gsx-r1000/black.jpg"
+                        "/images/suzuki/gsx-r1000/white.jpg",
+                        "/images/suzuki/gsx-r1000/blue.jpg",
+                        "/images/suzuki/gsx-r1000/black.jpg"
                     }
                 },
                 new Motor
@@ -282,9 +282,9 @@ namespace PE1.Webshop.Domain
                     Price=8299,
                     Image = new List<string>
                     {
-                        "~/images/suzuki/v-strom_650/grey.jpg",
-                        "~/images/suzuki/v-strom_650/black.jpg",
-                        "~/images/suzuki/v-strom_650/white.jpg"
+                        "/images/suzuki/v-strom_650/grey.jpg",
+                        "/images/suzuki/v-strom_650/black.jpg",
+                        "/images/suzuki/v-strom_650/white.jpg"
                     }
                 },
                 new Motor
@@ -307,9 +307,9 @@ namespace PE1.Webshop.Domain
                     Price=14599,
                     Image = new List<string>
                     {
-                        "~/images/suzuki/v-strom_1050xt/orange.jpg",
-                        "~/images/suzuki/v-strom_1050xt/yellow.jpg",
-                        "~/images/suzuki/v-strom_1050xt/black.jpg"
+                        "/images/suzuki/v-strom_1050xt/orange.jpg",
+                        "/images/suzuki/v-strom_1050xt/yellow.jpg",
+                        "/images/suzuki/v-strom_1050xt/black.jpg"
                     }
                 },
                 //Kawasaki motors
@@ -331,7 +331,7 @@ namespace PE1.Webshop.Domain
                     Price=31500,
                     Image = new List<string>
                     {
-                        "~/images/kawasaki/ninja_h2_carbon/black.jpg"
+                        "/images/kawasaki/ninja_h2_carbon/black.png"
                     }
                 },
                 new Motor
@@ -352,7 +352,7 @@ namespace PE1.Webshop.Domain
                     Price=23499,
                     Image = new List<string>
                     {
-                        "~/images/kawasaki/ninja_zx-10r_se/silver.jpg"
+                        "/images/kawasaki/ninja_zx-10r_se/silver.png"
                     }
                 },
                 new Motor
@@ -373,7 +373,7 @@ namespace PE1.Webshop.Domain
                     Price=999,
                     Image = new List<string>
                     {
-                        "~/images/kawasaki/vulcan_s_cafe_tourer/orange.jpg"
+                        "/images/kawasaki/vulcan_s_cafe_tourer/orange.png"
                     }
                 },
                 new Motor
@@ -395,8 +395,8 @@ namespace PE1.Webshop.Domain
                     Price=7649,
                     Image = new List<string>
                     {
-                        "~/images/kawasaki/vulcan_s_performance/grey.jpg",
-                        "~/images/kawasaki/vulcan_s_performance/green.jpg"
+                        "/images/kawasaki/vulcan_s_performance/grey.png",
+                        "/images/kawasaki/vulcan_s_performance/green.png"
                     }
                 },
                 //Harley-Davidson motors
@@ -419,8 +419,8 @@ namespace PE1.Webshop.Domain
                     Price=18100,
                     Image = new List<string>
                     {
-                        "~/images/harley_davidson/fat_bob/red.jpg",
-                        "~/images/harley_davidson/fat_bob/black.jpg"
+                        "/images/harley_davidson/fat_bob/red.JPG",
+                        "/images/harley_davidson/fat_bob/black.JPG"
                     }
                 },
                 new Motor
@@ -442,8 +442,8 @@ namespace PE1.Webshop.Domain
                     Price=20000,
                     Image = new List<string>
                     {
-                        "~/images/harley_davidson/low_rider_s/black.jpg",
-                        "~/images/harley_davidson/low_rider_s/silver.jpg"
+                        "/images/harley_davidson/low_rider_s/black.JPG",
+                        "/images/harley_davidson/low_rider_s/silver.JPG"
                     }
                 },
                 new Motor
@@ -467,10 +467,10 @@ namespace PE1.Webshop.Domain
                     Price=22200,
                     Image = new List<string>
                     {
-                        "~/images/harley_davidson/fat_boy/red.jpg",
-                        "~/images/harley_davidson/fat_boy/silver.jpg",
-                        "~/images/harley_davidson/fat_boy/blue.jpg",
-                        "~/images/harley_davidson/fat_boy/black.jpg"
+                        "/images/harley_davidson/fat_boy/red.JPG",
+                        "/images/harley_davidson/fat_boy/silver.JPG",
+                        "/images/harley_davidson/fat_boy/blue.JGP",
+                        "/images/harley_davidson/fat_boy/black.JPG"
                     }
                 },
                 new Motor
@@ -491,7 +491,7 @@ namespace PE1.Webshop.Domain
                     Price=13795,
                     Image = new List<string>
                     {
-                        "~/images/harley_davidson/softail_standard/black.jpg"
+                        "/images/harley_davidson/softail_standard/black.JPG"
                     }
                 },
                 new Motor
@@ -514,9 +514,9 @@ namespace PE1.Webshop.Domain
                     Price=25100,
                     Image = new List<string>
                     {
-                        "~/images/harley_davidson/road_king/black.jpg",
-                        "~/images/harley_davidson/road_king/red.jpg",
-                        "~/images/harley_davidson/road_king/white.jpg"
+                        "/images/harley_davidson/road_king/black.JPG",
+                        "/images/harley_davidson/road_king/red.JPG",
+                        "/images/harley_davidson/road_king/white.JPG"
                     }
                 },
                 //BMW
@@ -540,9 +540,9 @@ namespace PE1.Webshop.Domain
                     Price=11450,
                     Image = new List<string>
                     {
-                        "~/images/bmw/f_900_xr/red.jpg",
-                        "~/images/bmw/f_900_xr/white.jpg",
-                        "~/images/bmw/f_900_xr/yellow.jpg"
+                        "/images/bmw/f_900_xr/red.jpg",
+                        "/images/bmw/f_900_xr/white.jpg",
+                        "/images/bmw/f_900_xr/yellow.jpg"
                     }
                 },
                 new Motor
@@ -566,10 +566,10 @@ namespace PE1.Webshop.Domain
                     Price=17290,
                     Image = new List<string>
                     {
-                        "~/images/bmw/r_1250_gs/black.jpg",
-                        "~/images/bmw/r_1250_gs/white.jpg",
-                        "~/images/bmw/r_1250_gs/blue.jpg",
-                        "~/images/bmw/r_1250_gs/yellow.jpg"
+                        "/images/bmw/r_1250_gs/black.jpg",
+                        "/images/bmw/r_1250_gs/white.jpg",
+                        "/images/bmw/r_1250_gs/blue.jpg",
+                        "/images/bmw/r_1250_gs/yellow.jpg"
                     }
                 },
                 new Motor
@@ -592,9 +592,9 @@ namespace PE1.Webshop.Domain
                     Price=28300,
                     Image = new List<string>
                     {
-                        "~/images/bmw/k_1600_gtl/brown.jpg",
-                        "~/images/bmw/k_1600_gtl/black.jpg",
-                        "~/images/bmw/k_1600_gtl/white.jpg"
+                        "/images/bmw/k_1600_gtl/brown.jpg",
+                        "/images/bmw/k_1600_gtl/black.jpg",
+                        "/images/bmw/k_1600_gtl/white.jpg"
                     }
                 },
                 new Motor
@@ -617,9 +617,9 @@ namespace PE1.Webshop.Domain
                     Price=19720,
                     Image = new List<string>
                     {
-                        "~/images/bmw/r_1250_rt/brown.jpg",
-                        "~/images/bmw/r_1250_rt/blue.jpg",
-                        "~/images/bmw/r_1250_rt/silver.jpg"
+                        "/images/bmw/r_1250_rt/brown.jpg",
+                        "/images/bmw/r_1250_rt/blue.jpg",
+                        "/images/bmw/r_1250_rt/silver.jpg"
                     }
                 },
                 new Motor
@@ -642,9 +642,9 @@ namespace PE1.Webshop.Domain
                     Price=26150,
                     Image = new List<string>
                     {
-                        "~/images/bmw/k_1600_b/silver.jpg",
-                        "~/images/bmw/k_1600_b/red.jpg",
-                        "~/images/bmw/k_1600_b/black.jpg"
+                        "/images/bmw/k_1600_b/silver.jpg",
+                        "/images/bmw/k_1600_b/red.jpg",
+                        "/images/bmw/k_1600_b/black.jpg"
                     }
                 },
                 new Motor
@@ -667,9 +667,9 @@ namespace PE1.Webshop.Domain
                     Price=15260,
                     Image = new List<string>
                     {
-                        "~/images/bmw/r_1250_rs/black.jpg",
-                        "~/images/bmw/r_1250_rs/yellow.jpg",
-                        "~/images/bmw/r_1250_rs/blue.jpg"
+                        "/images/bmw/r_1250_rs/black.jpg",
+                        "/images/bmw/r_1250_rs/yellow.jpg",
+                        "/images/bmw/r_1250_rs/blue.jpg"
                     }
                 }
             };
