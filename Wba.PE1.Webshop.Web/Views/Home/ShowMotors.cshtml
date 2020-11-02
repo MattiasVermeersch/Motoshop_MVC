@@ -3,9 +3,30 @@
     ViewData["Title"] = "Motors Webshop";
 }
 
-<h1>Webshop Motors</h1>
+<h1 class="display-1">Webshop Motors</h1>
 
-<div class="list-group">
-    
+<div class="container-fluid">
+    @foreach (var category in Model.Categories)
+    {
+        <hr />
+        <h3 style="font-weight:bold">@category.Name</h3>
+        <hr />
 
+        <div class="row">
+            @foreach (var motor in Model.Motors)
+            {
+                if(motor.Category.Id == category.Id)
+                {
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="img-responsive img-thumbnail" src="@motor.Image.First()" alt="@motor.Name" width="33%"/><br />
+                        <h5>@motor.Name</h5>
+                        <p>@motor.Brand.Name</p>
+                        <p>€ @motor.Price</p>
+                    </div>
+                }
+            }
+        </div>
+    }
 </div>
+
+

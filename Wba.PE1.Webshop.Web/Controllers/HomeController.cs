@@ -43,6 +43,16 @@ namespace Wba.PE1.Webshop.Web.Controllers
             return View(viewModel);
         }
 
+        [Route("categories")]
+        public IActionResult ShowCategories()
+        {
+            var viewmodel = new HomeShowCategoriesVM();
+
+            viewmodel.Categories = categoryRepository.Categories;
+
+            return View(viewmodel);
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
