@@ -46,11 +46,36 @@ namespace Wba.PE1.Webshop.Web.Controllers
         [Route("categories")]
         public IActionResult ShowCategories()
         {
-            var viewmodel = new HomeShowCategoriesVM();
+            var viewModel = new HomeShowCategoriesVM();
 
-            viewmodel.Categories = categoryRepository.Categories;
+            viewModel.Categories = categoryRepository.Categories;
 
-            return View(viewmodel);
+            return View(viewModel);
+        }
+
+        [Route("brands")]
+        public IActionResult ShowBrands()
+        {
+            var viewModel = new HomeShowBrandsVM();
+
+            viewModel.Brands = brandRepository.Brands;
+
+            return View(viewModel);
+        }
+
+        [Route("brands/{brandId}")]
+        public IActionResult ShowBrandDetails(long brandId)
+        {
+            var viewModel = new HomeShowBrandDetailsVM();
+
+            var brand = brandRepository.GetBrandById(brandId);
+
+            if (brand == null)
+                return NotFound();
+
+            viewModel.Brand = brand;
+
+            return View(viewModel);
         }
 
         public IActionResult About()
