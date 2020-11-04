@@ -3,29 +3,32 @@
     ViewData["Title"] = "Motors Webshop";
 }
 
-<h1 class="display-1">Webshop Motors</h1>
+<h1 class="header">Webshop Motors</h1>
 
-<div class="container-fluid">
+<div class="container">
     @foreach (var category in Model.Categories)
     {
         <hr />
-        <h3 style="font-weight:bold">@category.Name</h3>
+        <h3 class="header2">@category.Name</h3>
         <hr />
 
-        <div class="row">
-            @foreach (var motor in Model.Motors)
+        <div class="row">  
+        @foreach (var motor in Model.Motors)
+        {
+            @if (motor.Category.Id == category.Id)
             {
-                if(motor.Category.Id == category.Id)
-                {
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img class="img-responsive img-thumbnail" src="@motor.Image.First()" alt="@motor.Name" width="33%"/><br />
-                        <h5>@motor.Name</h5>
-                        <p>@motor.Brand.Name</p>
-                        <p>€ @motor.Price</p>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img src="@motor.Image.First()" alt="@motor.Name" height="325" max-width="99%" /><br />
+                        <h2>@motor.Name</h2>
+                        <h3>@motor.Brand.Name</h3>
+                        <h3>€ @String.Format("{0:### ###}", motor.Price.ToString("### ###"))</h3>
+                        <br /> 
                     </div>
-                }
+                </div>
             }
-        </div>
+        }
+        </div>  
     }
 </div>
 

@@ -18,6 +18,7 @@ namespace PE1.Webshop.Domain
                 {
                     Id=1, 
                     Name="Honda",
+                    Logo = "/images/honda/logo.jpg",
                     Contactpage = "https://www.fl.honda.be/motorcycles/useful-links/contact-us.html",
                     Homepage = "https://www.fl.honda.be/motorcycles.html"
                 },
@@ -25,6 +26,7 @@ namespace PE1.Webshop.Domain
                 {
                     Id=2,
                     Name="Suzuki",
+                    Logo= "/images/suzuki/logo.jpg",
                     Contactpage="https://www.suzuki2wheels.be/nl/content/Contact.html",
                     Homepage="https://www.suzuki2wheels.be/nl.html?gclid=Cj0KCQjwlvT8BRDeARIsAACRFiWEKHwZL9qO0U909iTRUPgXEsR969GnCYdlOfPaeLRwKC-mKLhtSVwaAvXTEALw_wcB"
                 },
@@ -32,6 +34,7 @@ namespace PE1.Webshop.Domain
                 {
                     Id=3,
                     Name="Kawasaki",
+                    Logo = "/images/kawasaki/logo.jpg",
                     Contactpage="https://www.kawasaki.be/nl/products/pages/Contact?Uid=0B12UAwKXlwKClENXlhQXA1aUAleCQsLUQkMX1hfCgldUAlGBgRFKi0",
                     Homepage="https://www.kawasaki.be/nl/products"
                 },
@@ -39,6 +42,7 @@ namespace PE1.Webshop.Domain
                 {
                     Id=4,
                     Name="Harley-Davidson",
+                    Logo= "/images/harley_davidson/logo.jpg",
                     Contactpage="https://www.harley-davidson.com/be/nl/customer-service/contact-us.html",
                     Homepage="https://www.harley-davidson.com/be/nl/index.html"
                 },
@@ -46,6 +50,7 @@ namespace PE1.Webshop.Domain
                 {
                     Id=5,
                     Name="BMW",
+                    Logo="/images/bmw/logo.jpg",
                     Contactpage="https://www.bmw-motorrad.be/nl/public-pool/content-pool/contact.html",
                     Homepage="https://www.bmw-motorrad.be/nl/models/modeloverview.html"
                 }

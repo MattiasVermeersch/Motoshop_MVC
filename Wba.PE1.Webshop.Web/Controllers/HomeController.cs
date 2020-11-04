@@ -43,12 +43,43 @@ namespace Wba.PE1.Webshop.Web.Controllers
             return View(viewModel);
         }
 
+        [Route("motors/{motorId}")]
+        public IActionResult ShowMotorDetails(long motorId)
+        {
+            var viewModel = new HomeShowMotorDetailsVM();
+
+            var motor = motorRepository.GetMotorById(motorId);
+
+            if (motor == null)
+                return NotFound();
+
+            viewModel.Motor = motor;
+
+            return View(viewModel);
+        }
+
         [Route("categories")]
         public IActionResult ShowCategories()
         {
             var viewModel = new HomeShowCategoriesVM();
 
             viewModel.Categories = categoryRepository.Categories;
+
+            return View(viewModel);
+        }
+
+        [Route("categories/{categoryId}/motors")]
+        public IActionResult ShowMotorsInCategory(long categoryId)
+        {
+            var viewModel = new HomeShowMotorsInCategoryVM();
+
+            Category category = categoryRepository.GetCategoryById(categoryId);
+
+            if (category == null)
+                return NotFound();
+
+            viewModel.CategoryName = category.Name;
+            viewModel.Motors = motorRepository.GetMotorsByCategoryId(categoryId);
 
             return View(viewModel);
         }
@@ -74,6 +105,19 @@ namespace Wba.PE1.Webshop.Web.Controllers
                 return NotFound();
 
             viewModel.Brand = brand;
+
+            return View(viewModel);
+        }
+
+        [Route("brands/{brandId}/motors")]
+        public IActionResult ShowMotorsInBrand(long brandId)
+        {
+            var viewModel = new HomeShowMotorsInBrandVM();
+
+            Brand brand = brandRepository.GetBrandById(brandId);
+
+            viewModel.BrandName = brand.Name;
+            viewModel.Motors = motorRepository.GetMotorsByBrandId(brandId);
 
             return View(viewModel);
         }

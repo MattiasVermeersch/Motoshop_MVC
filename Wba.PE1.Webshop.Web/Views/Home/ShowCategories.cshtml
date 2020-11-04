@@ -3,7 +3,7 @@
     ViewData["Title"] = "Categories";
 }
 
-<h1 class="category">Categories</h1>
+<h1 class="header">Categories</h1>
 
 @foreach(var category in Model.Categories)
 {
@@ -11,7 +11,9 @@
         <li class="list-group-item" style="border: none">
             <p class="text-capitalize" style="font-size:36px; font-weight:900">@category.Name</p>
             <center><img src="@category.Image" alt="@category.Name" /></center>
-            <p style="font-size: 24px">@category.Description</p>
+            <br />
+            <p style="font-size: 18px">@category.Description</p>
+            <p style="font-size: 18px">Look at all the "@category.Name" bikes we have on offer <a href="categories/@category.Id/motors">here</a></p>
         </li>
     </ul>
 }

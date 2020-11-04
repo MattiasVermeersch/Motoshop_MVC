@@ -36,10 +36,24 @@ body {
     }
 }
 
-h1 .category {
+.header {
     font-size: 48px;
-    background-color: dodgerblue;
-    color: white;
     padding: 5px;
     font-weight: bold;
+}
+
+.header2 {
+    font-size: 36px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.category {
+    color: forestgreen;
+    font-style: italic;
+}
+
+.brand {
+    color: cornflowerblue;
+    font-style: italic;
 }
