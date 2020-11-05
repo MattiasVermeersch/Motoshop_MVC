@@ -2,21 +2,31 @@
 @{
     ViewData["Title"] = "ShowMotorDetails";
 }
+<script src="~/js/functions.js"></script>
 
 <h2>Specifications @Model.Motor.Brand.Name @Model.Motor.Name</h2>
 
 <table class="table-striped">
     <tr>
         <td colspan="2">
-            <img src="@Model.Motor.Image.First()" alt="@Model.Motor.Brand.Name @Model.Motor.Name" height="500" />
+            <img id="imgMotor" src="@Model.Motor.Image.First()" alt="@Model.Motor.Brand.Name @Model.Motor.Name" height="500" />
         </td>
         <td>
             <div class="btn-group" data-toggle="buttons">
-                @foreach(var color in Model.Motor.Colors)
+                @foreach (var color in Model.Motor.Colors)
                 {
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option1" checked> @color
-                </label><br />
+                    @if (color == @Model.Motor.Colors.First())
+                    {
+                        <label class="btn btn-primary btn-lg btn-block active">
+                            <input type="radio" name="colors" id="@color" checked> @color
+                        </label><br />
+                    }
+                    else
+                    {
+                        <label class="btn btn-primary btn-lg btn-block">
+                            <input type="radio" name="colors" id="@color"> @color
+                        </label><br />
+                    }
                 }
             </div>
         </td>
