@@ -14,7 +14,7 @@ namespace PE1.Webshop.Domain
         public Brand Brand { get; set; }
         public Category Category { get; set; }
         public IEnumerable<string> Colors { get; set; }
-        public int Year { get; set; }
+        public int? Year { get; set; }
         public int Cilinder { get; set; }
         public string Power { get; set; }
         public double Fueltank { get; set; }

@@ -15,7 +15,10 @@
                     <h2>@motor.Name</h2>
                     <h3>@motor.Category.Name</h3>
                     <h3>€ @String.Format("{0:### ###}", motor.Price.ToString("### ###"))</h3>
-                    <br />
+                    <div class="btn-group">
+                        <a class="btn btn-primary" href="/motors/@motor.Id">More details</a>
+                    </div>
+                    <br /><br />   
                 </div>
             </div>
         }
