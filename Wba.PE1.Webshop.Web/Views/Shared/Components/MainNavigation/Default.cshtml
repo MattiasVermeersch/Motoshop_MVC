@@ -1,0 +1,15 @@
+﻿@model IEnumerable<pe1.Webshop.Web.ViewModels.MainNavLinkVM> 
+
+<ul class="nav nav-tabs"> 
+    @foreach (var navlink in Model)
+    {
+        <li class="nav-item @(Html.Raw(navlink.IsActive ? "active" : ""))">
+            <a class="nav-link"
+                asp-action="@navlink.Action"
+                asp-controller="@navlink.Controller"
+                asp-area="@navlink.Area">
+                @navlink.Text
+            </a>
+        </li>
+    }
+</ul>

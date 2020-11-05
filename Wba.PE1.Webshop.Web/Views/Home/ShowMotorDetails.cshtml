@@ -1,0 +1,64 @@
+﻿@model pe1.Webshop.Web.ViewModels.HomeShowMotorDetailsVM
+@{
+    ViewData["Title"] = "ShowMotorDetails";
+}
+<script src="~/js/functions.js"></script>
+
+<h2>Specifications @Model.Motor.Brand.Name @Model.Motor.Name</h2>
+
+<table class="table-striped">
+    <tr>
+        <td colspan="2">
+            <img id="imgMotor" src="@Model.Motor.Image.First()" alt="@Model.Motor.Brand.Name @Model.Motor.Name" height="500" />
+        </td>
+        <td>
+            <input id="inputBrand" type="hidden" value="@Model.Motor.Brand.Name"/>
+            <input id="inputName" type="hidden" value="@Model.Motor.Name"/>
+            <div class="btn-group" data-toggle="buttons">
+                @foreach (var color in Model.Motor.Colors)
+                {
+                    @if (color == @Model.Motor.Colors.First())
+                    {
+                        <label class="btn btn-primary btn-lg btn-block active" id="@color">
+                            <input type="radio" name="colors" checked> @color
+                        </label><br />
+                    }
+                    else
+                    {
+                        <label class="btn btn-primary btn-lg btn-block" id="@color">
+                            <input type="radio" name="colors"> @color
+                        </label><br />
+                    }
+                }
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Model: </td>
+        <td>@Model.Motor.Name</td>
+    </tr>
+    <tr>
+        <td>Brand: </td>
+        <td>@Model.Motor.Brand.Name</td>
+    </tr>
+    <tr>
+        <td>Category: </td>
+        <td>@Model.Motor.Category.Name</td>
+    </tr>
+    <tr>
+        <td>Production Year: </td>
+        <td>@Model.Motor.Year</td>
+    </tr>
+    <tr>
+        <td>Engine displacement: </td>
+        <td>@Model.Motor.Cilinder cc</td>
+    </tr>
+    <tr>
+        <td>Power: </td>
+        <td>@Model.Motor.Power</td>
+    </tr>
+    <tr>
+        <td>Fuel Tank Capacity (Litres) and type: </td>
+        <td>@Model.Motor.Fueltank (@Model.Motor.Fueltype)</td>
+    </tr>
+</table>

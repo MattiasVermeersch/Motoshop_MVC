@@ -1,0 +1,26 @@
+﻿@model pe1.Webshop.Web.ViewModels.HomeShowMotorsInBrandVM
+@{
+    ViewData["Title"] = "ShowMotorsInBrand";
+}
+
+<h2>All motors of the <span class="brand">@Model.BrandName</span> brand</h2>
+
+<div class="container">
+    <div class="row">
+        @foreach (var motor in Model.Motors)
+        {
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img src="@motor.Image.First()" alt="@motor.Name" height="325" max-width="99%" /><br />
+                    <h2>@motor.Name</h2>
+                    <h3>@motor.Category.Name</h3>
+                    <h3>€ @String.Format("{0:### ###}", motor.Price.ToString("### ###"))</h3>
+                    <div class="btn-group">
+                        <a class="btn btn-primary btn-lg" href="/motors/@motor.Id">More details</a>
+                    </div>
+                    <br /><br />   
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Xml.Schema;
 
@@ -673,7 +674,21 @@ namespace PE1.Webshop.Domain
                     }
                 }
             };
-            
+        }
+
+        public Motor GetMotorById(long motorId)
+        {
+            return Motors.FirstOrDefault(m => m.Id == motorId);
+        }
+
+        public IEnumerable<Motor> GetMotorsByBrandId(long brandId)
+        {
+            return Motors.Where(m => m.Brand.Id == brandId);
+        }
+
+        public IEnumerable<Motor> GetMotorsByCategoryId(long categoryId)
+        {
+            return Motors.Where(m => m.Category.Id == categoryId);
         }
     }
 }

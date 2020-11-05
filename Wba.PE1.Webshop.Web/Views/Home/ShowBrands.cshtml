@@ -1,0 +1,27 @@
+﻿@model pe1.Webshop.Web.ViewModels.HomeShowBrandsVM
+@{
+    ViewData["Title"] = "ShowBrands";
+}
+
+<h2 class="header">Brands</h2>
+
+@foreach (var brand in Model.Brands)
+{
+    <ul class="list-group">
+        <li class="list-group-item" style="border: none">
+            <p class="text-capitalize" style="font-size:24px; font-weight:900">@brand.Name</p>
+            <table class="table-responsive">
+                <tr>
+                    <td rowspan="3" style="width: 15em; text-align:center"><img src="@brand.Logo" alt="Alternate Text" height="150"/></td>
+                    <td><p style="font-size: 18px">If you want to look at all the @brand.Name motors in our shop, click <a href="/brands/@brand.Id/motors">here</a></p></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size: 18px">Want to visit the @brand.Name homepage? Click <a href="@brand.Homepage">here</a></p></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size: 18px">Do you have a question about this particular brand? Ask them directly <a href="@brand.Contactpage">here</a></p></td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+}

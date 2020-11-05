@@ -35,3 +35,25 @@ body {
         display: none;
     }
 }
+
+.header {
+    font-size: 48px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.header2 {
+    font-size: 36px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.category {
+    color: forestgreen;
+    font-style: italic;
+}
+
+.brand {
+    color: cornflowerblue;
+    font-style: italic;
+}
