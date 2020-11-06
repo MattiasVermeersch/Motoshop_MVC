@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace pe1.Webshop.Web.ViewModels
 {
-    public class HomeShowBrandDetailsVM
+    public class BrandShowBrandsVM
     {
-        public Brand Brand { get; set; }
+        public IEnumerable<Brand> Brands;
     }
 }

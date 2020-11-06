@@ -17,8 +17,8 @@ namespace pe1.Webshop.Web.Models.Components
             publicLinks = new List<MainNavLinkVM>
             {
                 new MainNavLinkVM{ Area=null, Controller="Home", Action="ShowMotors", Text="Home"},
-                new MainNavLinkVM{ Area=null, Controller="Home", Action="ShowCategories", Text="Categories"},
-                new MainNavLinkVM{ Area=null, Controller="Home", Action="ShowBrands", Text="Brands"}
+                new MainNavLinkVM{ Area=null, Controller="Category", Action="ShowCategories", Text="All Categories"},
+                new MainNavLinkVM{ Area=null, Controller="Brand", Action="ShowBrands", Text="All Brands"}
             };
         }
         public async Task<IViewComponentResult> InvokeAsync()
