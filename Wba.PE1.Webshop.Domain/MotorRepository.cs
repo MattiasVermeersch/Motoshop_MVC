@@ -26,12 +26,12 @@ namespace PE1.Webshop.Domain
                     Name="CB500F",
                     Brand=BrandRepository.GetBrandById(1),
                     Category=CategoryRepository.GetCategoryById(1),
-                    Colors=new List<string>
+                    Colors=new List<Color>
                     {
-                        "Red",
-                        "Black",
-                        "Blue",
-                        "Orange"
+                        new Color { Name = "Red" },
+                        new Color { Name = "Black" },
+                        new Color { Name = "Blue" },
+                        new Color { Name = "Orange" }
                     },
                     Year=2019,
                     Cilinder=471,
@@ -53,12 +53,12 @@ namespace PE1.Webshop.Domain
                     Name="CB125R",
                     Brand=BrandRepository.GetBrandById(1),
                     Category=CategoryRepository.GetCategoryById(1),
-                    Colors=new List<string>
+                    Colors=new List<Color>
                     {
-                        "Black",
-                        "Grey",
-                        "White",
-                        "Red"
+                        new Color {Name = "Black" },
+                        new Color {Name = "Grey" },
+                        new Color {Name = "White" },
+                        new Color {Name = "Red" }
                     },
                     Year=2018,
                     Cilinder=125,
@@ -80,11 +80,11 @@ namespace PE1.Webshop.Domain
                     Name="CB1000R",
                     Brand=BrandRepository.GetBrandById(1),
                     Category=CategoryRepository.GetCategoryById(1),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "White",
-                        "Black",
-                        "Red"
+                        new Color {Name = "White" },
+                        new Color {Name = "Black" },
+                        new Color {Name = "Red" }
                     },
                     Year=2020,
                     Cilinder=998,
@@ -105,11 +105,11 @@ namespace PE1.Webshop.Domain
                     Name="CBR500R",
                     Brand=BrandRepository.GetBrandById(1),
                     Category=CategoryRepository.GetCategoryById(3),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Red",
-                        "Black",
-                        "White"
+                        new Color {Name = "Red" },
+                        new Color {Name = "Black" },
+                        new Color {Name = "White" }
                     },
                     Year=2019,
                     Cilinder=471,
@@ -130,10 +130,10 @@ namespace PE1.Webshop.Domain
                     Name="CBR1000RR-R Fireblade",
                     Brand=BrandRepository.GetBrandById(1),
                     Category=CategoryRepository.GetCategoryById(3),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Red",
-                        "Black"
+                        new Color {Name = "Red" },
+                        new Color {Name = "Black" }
                     },
                     Year=2020,
                     Cilinder=999,
@@ -153,10 +153,10 @@ namespace PE1.Webshop.Domain
                     Name="Gold Wing Tour",
                     Brand=BrandRepository.GetBrandById(1),
                     Category=CategoryRepository.GetCategoryById(4),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Red",
-                        "Black"
+                        new Color {Name = "Red" },
+                        new Color {Name = "Black" }
                     },
                     Year=2020,
                     Cilinder=1833,
@@ -177,10 +177,10 @@ namespace PE1.Webshop.Domain
                     Name="GSX-S125",
                     Brand=BrandRepository.GetBrandById(2),
                     Category=CategoryRepository.GetCategoryById(1),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Red",
-                        "Blue"
+                        new Color {Name =  "Red" },
+                        new Color {Name = "Blue" }
                     },
                     Year=2020,
                     Cilinder=124,
@@ -200,10 +200,10 @@ namespace PE1.Webshop.Domain
                     Name="Katana",
                     Brand=BrandRepository.GetBrandById(2),
                     Category=CategoryRepository.GetCategoryById(1),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Silver",
-                        "Black"
+                        new Color {Name = "Silver" },
+                        new Color {Name = "Black" }
                     },
                     Year=2020,
                     Cilinder=999,
@@ -223,9 +223,9 @@ namespace PE1.Webshop.Domain
                     Name="GSX-R125",
                     Brand=BrandRepository.GetBrandById(2),
                     Category=CategoryRepository.GetCategoryById(3),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Blue"
+                        new Color {Name = "Blue" }
                     },
                     Year=2020,
                     Cilinder=124,
@@ -244,11 +244,11 @@ namespace PE1.Webshop.Domain
                     Name="GSX-R1000",
                     Brand=BrandRepository.GetBrandById(2),
                     Category=CategoryRepository.GetCategoryById(3),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "White",
-                        "Blue",
-                        "Black"
+                        new Color {Name = "White" },
+                        new Color {Name = "Blue" },
+                        new Color {Name = "Black"}
                     },
                     Year=2020,
                     Cilinder=999,
@@ -269,11 +269,11 @@ namespace PE1.Webshop.Domain
                     Name="V-Strom 650",
                     Brand=BrandRepository.GetBrandById(2),
                     Category=CategoryRepository.GetCategoryById(5),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Grey",
-                        "Black",
-                        "White"
+                        new Color {Name = "Grey" },
+                        new Color {Name = "Black" },
+                        new Color {Name = "White" }
                     },
                     Year=2020,
                     Cilinder=645,
@@ -294,11 +294,11 @@ namespace PE1.Webshop.Domain
                     Name="V-Strom 1050XT",
                     Brand=BrandRepository.GetBrandById(2),
                     Category=CategoryRepository.GetCategoryById(5),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Orange",
-                        "Yellow",
-                        "Black"
+                        new Color {Name = "Orange" },
+                        new Color {Name =  "Yellow" },
+                        new Color {Name = "Black" }
                     },
                     Year=2020,
                     Cilinder=1037,
@@ -320,9 +320,9 @@ namespace PE1.Webshop.Domain
                     Name="Ninja H2 Carbon",
                     Brand=BrandRepository.GetBrandById(3),
                     Category=CategoryRepository.GetCategoryById(3),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Black"
+                        new Color { Name = "Black" }
                     },
                     Year=2018,
                     Cilinder=998,
@@ -332,7 +332,7 @@ namespace PE1.Webshop.Domain
                     Price=31500,
                     Image = new List<string>
                     {
-                        "/images/kawasaki/ninja h2 carbon/black.png"
+                        "/images/kawasaki/ninja h2 carbon/black.jpg"
                     }
                 },
                 new Motor
@@ -341,9 +341,9 @@ namespace PE1.Webshop.Domain
                     Name="Ninja ZX-10R SE",
                     Brand=BrandRepository.GetBrandById(3),
                     Category=CategoryRepository.GetCategoryById(3),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Silver"
+                        new Color {Name = "Silver" }
                     },
                     Year=2018,
                     Cilinder=998,
@@ -362,9 +362,9 @@ namespace PE1.Webshop.Domain
                     Name="Vulcan S Cafe Tourer",
                     Brand=BrandRepository.GetBrandById(3),
                     Category=CategoryRepository.GetCategoryById(2),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Orange"
+                        new Color {Name = "Orange" }
                     },
                     Year=2019,
                     Cilinder=649,
@@ -383,10 +383,10 @@ namespace PE1.Webshop.Domain
                     Name="Vulcan S Performance",
                     Brand=BrandRepository.GetBrandById(3),
                     Category=CategoryRepository.GetCategoryById(2),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Grey",
-                        "Green"
+                        new Color {Name = "Grey" },
+                        new Color {Name = "Green" }
                     },
                     Year=2019,
                     Cilinder=1700,
@@ -407,10 +407,10 @@ namespace PE1.Webshop.Domain
                     Name="Fat Bob",
                     Brand=BrandRepository.GetBrandById(4),
                     Category=CategoryRepository.GetCategoryById(2),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Red",
-                        "Black"
+                        new Color {Name = "Red" },
+                        new Color {Name = "Black" }
                     },
                     Year=2020,
                     Cilinder=1746,
@@ -430,10 +430,10 @@ namespace PE1.Webshop.Domain
                     Name="Low Rider S",
                     Brand=BrandRepository.GetBrandById(4),
                     Category=CategoryRepository.GetCategoryById(2),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Black",
-                        "Silver"
+                        new Color {Name = "Black"},
+                        new Color {Name = "Silver" }
                     },
                     Year=2020,
                     Cilinder=1868,
@@ -453,12 +453,12 @@ namespace PE1.Webshop.Domain
                     Name="Fat Boy",
                     Brand=BrandRepository.GetBrandById(4),
                     Category=CategoryRepository.GetCategoryById(2),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Red",
-                        "Silver",
-                        "Blue",
-                        "Black"
+                        new Color {Name = "Red" },
+                        new Color {Name = "Silver" },
+                        new Color {Name = "Blue" },
+                        new Color {Name = "Black" }
                     },
                     Year=2020,
                     Cilinder=1868,
@@ -480,9 +480,9 @@ namespace PE1.Webshop.Domain
                     Name="Softail Standard",
                     Brand=BrandRepository.GetBrandById(4),
                     Category=CategoryRepository.GetCategoryById(2),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Black"
+                        new Color {Name = "Black" }
                     },
                     Year=2020,
                     Cilinder=1746,
@@ -501,11 +501,11 @@ namespace PE1.Webshop.Domain
                     Name="Road King",
                     Brand=BrandRepository.GetBrandById(4),
                     Category=CategoryRepository.GetCategoryById(4),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Black",
-                        "Red",
-                        "White"
+                        new Color {Name = "Black" },
+                        new Color {Name = "Red" },
+                        new Color {Name = "White" }
                     },
                     Year=2020,
                     Cilinder=1746,
@@ -527,11 +527,11 @@ namespace PE1.Webshop.Domain
                     Name="F 900 XR",
                     Brand=BrandRepository.GetBrandById(5),
                     Category=CategoryRepository.GetCategoryById(5),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Red",
-                        "White",
-                        "Yellow"
+                        new Color {Name = "Red" },
+                        new Color {Name = "White" },
+                        new Color {Name = "Yellow" }
                     },
                     Year=2020,
                     Cilinder=895,
@@ -552,12 +552,12 @@ namespace PE1.Webshop.Domain
                     Name="R 1250 GS",
                     Brand=BrandRepository.GetBrandById(5),
                     Category=CategoryRepository.GetCategoryById(5),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Black",
-                        "White",
-                        "Blue",
-                        "Yellow"
+                        new Color {Name = "Black" },
+                        new Color {Name = "White" },
+                        new Color {Name = "Blue" },
+                        new Color {Name = "Yellow" }
                     },
                     Year=2020,
                     Cilinder=1254,
@@ -579,11 +579,11 @@ namespace PE1.Webshop.Domain
                     Name="K 1600 GTL",
                     Brand=BrandRepository.GetBrandById(5),
                     Category=CategoryRepository.GetCategoryById(4),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Brown",
-                        "Black",
-                        "White"
+                        new Color {Name = "Brown" },
+                        new Color {Name = "Black" },
+                        new Color {Name = "White" }
                     },
                     Year=2020,
                     Cilinder=1649,
@@ -604,11 +604,11 @@ namespace PE1.Webshop.Domain
                     Name="R 1250 RT",
                     Brand=BrandRepository.GetBrandById(5),
                     Category=CategoryRepository.GetCategoryById(4),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Brown",
-                        "Blue",
-                        "Silver"
+                        new Color {Name = "Brown" },
+                        new Color {Name = "Blue" },
+                        new Color {Name = "Silver" }
                     },
                     Year=2020,
                     Cilinder=1254,
@@ -629,11 +629,11 @@ namespace PE1.Webshop.Domain
                     Name="K 1600 B",
                     Brand=BrandRepository.GetBrandById(5),
                     Category=CategoryRepository.GetCategoryById(4),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Silver",
-                        "Red",
-                        "Black"
+                        new Color {Name = "Silver" },
+                        new Color {Name = "Red" },
+                        new Color {Name = "Black" }
                     },
                     Year=2020,
                     Cilinder=1649,
@@ -654,11 +654,11 @@ namespace PE1.Webshop.Domain
                     Name="R 1250 RS",
                     Brand=BrandRepository.GetBrandById(5),
                     Category=CategoryRepository.GetCategoryById(3),
-                    Colors= new List<string>
+                    Colors= new List<Color>
                     {
-                        "Black",
-                        "Yellow",
-                        "Blue"
+                        new Color {Name = "Black" },
+                        new Color {Name = "Yellow" },
+                        new Color {Name = "Blue" }
                     },
                     Year=2020,
                     Cilinder=1254,

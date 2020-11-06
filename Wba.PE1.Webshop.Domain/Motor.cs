@@ -13,7 +13,7 @@ namespace PE1.Webshop.Domain
         public string Name { get; set; }
         public Brand Brand { get; set; }
         public Category Category { get; set; }
-        public IEnumerable<string> Colors { get; set; }
+        public IEnumerable<Color> Colors { get; set; }
         public int? Year { get; set; }
         public int Cilinder { get; set; }
         public string Power { get; set; }

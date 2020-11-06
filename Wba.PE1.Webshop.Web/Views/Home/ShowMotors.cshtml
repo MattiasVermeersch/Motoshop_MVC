@@ -3,7 +3,7 @@
     ViewData["Title"] = "Motors Webshop";
 }
 
-<h1 class="header">Webshop Motors</h1>
+<h1 class="header">@ViewData["Message"]</h1>
 
 <div class="container">
     <div class="row">  
@@ -11,10 +11,18 @@
     {
         <div class="col-md-6">
             <div class="text-center">
-                <img src="@motor.Image.First()" alt="@motor.Name" height="325" max-width="99%" /><br />
+                @if ((string)ViewData["MyColor"] == "Black")
+                {
+                    <img src="/images/@motor.Brand.Name.ToLower()/@motor.Name.ToLower()/black.jpg" alt="@motor.Name" height="325" max-width="90%" /><br />
+                }
+                else
+                {
+                    <img src="@motor.Image.First()" alt="@motor.Name" height="325" max-width="90%" /><br />
+                }
+
                 <h2>@motor.Brand.Name @motor.Name</h2>
                 <h3>@motor.Category.Name</h3>
-                
+                <h3>€ @String.Format("{0:### ###}", motor.Price.ToString("### ###"))</h3>
                 <div class="btn-group">
                     <a class="btn btn-info btn-lg" href="/motors/@motor.Id">More details</a>
                 </div>
