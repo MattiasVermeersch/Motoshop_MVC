@@ -48,5 +48,80 @@ namespace pe1.Webshop.Web.Controllers
 
             return View(viewModel);
         }
+
+        public IActionResult ShowStandardMotors()
+        {
+            var viewModel = new CategoryShowMotorsInCategoryVM();
+
+            Category category = categoryRepository.GetCategoryById(1);
+
+            if (category == null)
+                return NotFound();
+
+            viewModel.CategoryName = category.Name;
+            viewModel.Motors = motorRepository.GetMotorsByCategoryId(1);
+
+            return View("ShowMotorsInCategory", viewModel);
+        }
+
+        public IActionResult ShowCruiserMotors()
+        {
+            var viewModel = new CategoryShowMotorsInCategoryVM();
+
+            Category category = categoryRepository.GetCategoryById(2);
+
+            if (category == null)
+                return NotFound();
+
+            viewModel.CategoryName = category.Name;
+            viewModel.Motors = motorRepository.GetMotorsByCategoryId(2);
+
+            return View("ShowMotorsInCategory", viewModel);
+        }
+
+        public IActionResult ShowSportBikeMotors()
+        {
+            var viewModel = new CategoryShowMotorsInCategoryVM();
+
+            Category category = categoryRepository.GetCategoryById(3);
+
+            if (category == null)
+                return NotFound();
+
+            viewModel.CategoryName = category.Name;
+            viewModel.Motors = motorRepository.GetMotorsByCategoryId(3);
+
+            return View("ShowMotorsInCategory", viewModel);
+        }
+
+        public IActionResult ShowTouringMotors()
+        {
+            var viewModel = new CategoryShowMotorsInCategoryVM();
+
+            Category category = categoryRepository.GetCategoryById(4);
+
+            if (category == null)
+                return NotFound();
+
+            viewModel.CategoryName = category.Name;
+            viewModel.Motors = motorRepository.GetMotorsByCategoryId(4);
+
+            return View("ShowMotorsInCategory", viewModel);
+        }
+
+        public IActionResult ShowOffRoadMotors()
+        {
+            var viewModel = new CategoryShowMotorsInCategoryVM();
+
+            Category category = categoryRepository.GetCategoryById(5);
+
+            if (category == null)
+                return NotFound();
+
+            viewModel.CategoryName = category.Name;
+            viewModel.Motors = motorRepository.GetMotorsByCategoryId(5);
+
+            return View("ShowMotorsInCategory", viewModel);
+        }
     }
 }
