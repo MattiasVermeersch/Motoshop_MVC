@@ -37,8 +37,6 @@ namespace Wba.PE1.Webshop.Web.Controllers
 
             //fill the viewmodel with motors to display on home screen
             viewModel.Motors = motorRepository.Motors;
-            viewModel.Brands = brandRepository.Brands;
-            viewModel.Categories = categoryRepository.Categories;
 
             return View(viewModel);
         }

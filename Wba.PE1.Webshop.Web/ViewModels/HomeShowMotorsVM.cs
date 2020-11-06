@@ -8,8 +8,6 @@ namespace pe1.Webshop.Web.ViewModels
 {
     public class HomeShowMotorsVM
     {
-        public IEnumerable<Brand> Brands { get; set; }
-        public IEnumerable<Category> Categories { get; set; }
         public IEnumerable<Motor> Motors { get; set; }
     }
 }
