@@ -18,11 +18,6 @@ namespace pe1.Webshop.Web.Models.Components
             publicLinks = new List<MainNavLinkVM>
             {
                 new MainNavLinkVM{ Area=null, Controller="Home", Action="ShowMotors", Text="Home"},
-                new MainNavLinkVM{ Area=null, Controller="Category", Action="ShowMotorsInCategory", Id="1", Text="Standard"},
-                new MainNavLinkVM{ Area=null, Controller="Category", Action="ShowMotorsInCategory", Id="2", Text="Cruiser"},
-                new MainNavLinkVM{ Area=null, Controller="Category", Action="ShowMotorsInCategory", Id="3", Text="Sport Bike"},
-                new MainNavLinkVM{ Area=null, Controller="Category", Action="ShowMotorsInCategory", Id="4", Text="Touring"},
-                new MainNavLinkVM{ Area=null, Controller="Category", Action="ShowMotorsInCategory", Id="5", Text="Off-road"},
                 new MainNavLinkVM{ Area=null, Controller="Category", Action="ShowCategories", Text="About Categories"},
                 new MainNavLinkVM{ Area=null, Controller="Brand", Action="ShowBrands", Text="About Brands"}
             };

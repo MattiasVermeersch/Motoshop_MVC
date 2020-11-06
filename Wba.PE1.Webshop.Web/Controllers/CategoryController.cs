@@ -32,8 +32,8 @@ namespace pe1.Webshop.Web.Controllers
 
             return View(viewModel);
         }
-         
 
+        [Route("Category/{categoryId:long}/Motors")]
         public IActionResult ShowMotorsInCategory(long categoryId)
         {
             var viewModel = new CategoryShowMotorsInCategoryVM();
@@ -48,6 +48,5 @@ namespace pe1.Webshop.Web.Controllers
 
             return View(viewModel);
         }
-
     }
 }

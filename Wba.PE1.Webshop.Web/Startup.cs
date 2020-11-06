@@ -58,7 +58,8 @@ namespace Wba.PE1.Webshop.Web
                     name: "SearchMotorsByCategory",
                     template: "Category/ShowMotorsInCategory/{categoryId:long}",
                     defaults: new { Controller = "Category", Action = "ShowMotorsInCategory" }
-                    );
+                );
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

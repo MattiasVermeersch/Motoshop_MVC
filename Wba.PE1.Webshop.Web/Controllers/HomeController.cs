@@ -21,7 +21,7 @@ namespace Wba.PE1.Webshop.Web.Controllers
         }
 
         [Route("/")]
-        [Route("home")]
+        [Route("Home")]
         public IActionResult ShowMotors()
         {
             //declaring view model
@@ -33,7 +33,7 @@ namespace Wba.PE1.Webshop.Web.Controllers
             return View(viewModel);
         }
 
-        [Route("motors/{motorId}")]
+        [Route("Motors/{motorId}")]
         public IActionResult ShowMotorDetails(long motorId)
         {
             var viewModel = new HomeShowMotorDetailsVM();

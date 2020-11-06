@@ -24,7 +24,7 @@ namespace pe1.Webshop.Web.Controllers
         }
 
 
-        [Route("brands")]
+        [Route("Brands")]
         public IActionResult ShowBrands()
         {
             var viewModel = new BrandShowBrandsVM();
@@ -34,7 +34,7 @@ namespace pe1.Webshop.Web.Controllers
             return View(viewModel);
         }
 
-        [Route("brands/{brandId}/motors")]
+        [Route("Brand/{brandId}/Motors")]
         public IActionResult ShowMotorsInBrand(long brandId)
         {
             var viewModel = new BrandShowMotorsInBrandVM();
