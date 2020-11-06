@@ -11,6 +11,7 @@ namespace pe1.Webshop.Web.ViewModels
         public string Area { get; set; } 
         public string Controller { get; set; } 
         public string Action { get; set; } 
+        public string Id { get; set; }
         public bool IsActive { get; set; }
     }
 }

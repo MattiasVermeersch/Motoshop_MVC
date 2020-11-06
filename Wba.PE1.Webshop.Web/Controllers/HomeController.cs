@@ -19,11 +19,6 @@ namespace Wba.PE1.Webshop.Web.Controllers
         {
             motorRepository = new MotorRepository();
         }
-        public IActionResult Index()
-        {
-            ViewBag.Title = "Webshop Motoren";
-            return View();
-        }
 
         [Route("/")]
         [Route("home")]

@@ -34,21 +34,6 @@ namespace pe1.Webshop.Web.Controllers
             return View(viewModel);
         }
 
-        [Route("brands/{brandId}")]
-        public IActionResult ShowBrandDetails(long brandId)
-        {
-            var viewModel = new BrandShowBrandDetailsVM();
-
-            var brand = brandRepository.GetBrandById(brandId);
-
-            if (brand == null)
-                return NotFound();
-
-            viewModel.Brand = brand;
-
-            return View(viewModel);
-        }
-
         [Route("brands/{brandId}/motors")]
         public IActionResult ShowMotorsInBrand(long brandId)
         {
