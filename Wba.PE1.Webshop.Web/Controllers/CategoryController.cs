@@ -26,7 +26,7 @@ namespace pe1.Webshop.Web.Controllers
         [Route("categories")]
         public IActionResult ShowCategories()
         {
-            var viewModel = new HomeShowCategoriesVM();
+            var viewModel = new CategoryShowCategoriesVM();
 
             viewModel.Categories = categoryRepository.Categories;
 
@@ -36,7 +36,7 @@ namespace pe1.Webshop.Web.Controllers
         [Route("categories/{categoryId}/motors")]
         public IActionResult ShowMotorsInCategory(long categoryId)
         {
-            var viewModel = new HomeShowMotorsInCategoryVM();
+            var viewModel = new CategoryShowMotorsInCategoryVM();
 
             Category category = categoryRepository.GetCategoryById(categoryId);
 
