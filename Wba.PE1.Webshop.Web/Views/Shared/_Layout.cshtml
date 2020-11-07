@@ -22,10 +22,7 @@
     <div class="container body-content">
         @await Component.InvokeAsync("MainNavigation")
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2020 - Webshop Motors</p>
-        </footer>
+        <partial name="FooterPartialView" />
     </div>
 
     <environment include="Development">
