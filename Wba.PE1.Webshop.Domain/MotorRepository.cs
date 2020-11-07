@@ -353,7 +353,7 @@ namespace PE1.Webshop.Domain
                     Price=23499,
                     Image = new List<string>
                     {
-                        "/images/kawasaki/ninja zx-10r se/silver.png"
+                        "/images/kawasaki/ninja zx-10r se/silver.jpg"
                     }
                 },
                 new Motor
@@ -374,7 +374,7 @@ namespace PE1.Webshop.Domain
                     Price=999,
                     Image = new List<string>
                     {
-                        "/images/kawasaki/vulcan s cafe tourer/orange.png"
+                        "/images/kawasaki/vulcan s cafe tourer/orange.jpg"
                     }
                 },
                 new Motor
@@ -396,8 +396,8 @@ namespace PE1.Webshop.Domain
                     Price=7649,
                     Image = new List<string>
                     {
-                        "/images/kawasaki/vulcan s performance/grey.png",
-                        "/images/kawasaki/vulcan s performance/green.png"
+                        "/images/kawasaki/vulcan s performance/grey.jpg",
+                        "/images/kawasaki/vulcan s performance/green.jpg"
                     }
                 },
                 //Harley-Davidson motors
@@ -420,8 +420,8 @@ namespace PE1.Webshop.Domain
                     Price=18100,
                     Image = new List<string>
                     {
-                        "/images/harley davidson/fat bob/red.JPG",
-                        "/images/harley davidson/fat bob/black.JPG"
+                        "/images/harley-davidson/fat bob/red.JPG",
+                        "/images/harley-davidson/fat bob/black.JPG"
                     }
                 },
                 new Motor
@@ -443,8 +443,8 @@ namespace PE1.Webshop.Domain
                     Price=20000,
                     Image = new List<string>
                     {
-                        "/images/harley davidson/low rider s/black.JPG",
-                        "/images/harley davidson/low rider s/silver.JPG"
+                        "/images/harley-davidson/low rider s/black.JPG",
+                        "/images/harley-davidson/low rider s/silver.JPG"
                     }
                 },
                 new Motor
@@ -468,10 +468,10 @@ namespace PE1.Webshop.Domain
                     Price=22200,
                     Image = new List<string>
                     {
-                        "/images/harley davidson/fat boy/red.JPG",
-                        "/images/harley davidson/fat boy/silver.JPG",
-                        "/images/harley davidson/fat boy/blue.JGP",
-                        "/images/harley davidson/fat boy/black.JPG"
+                        "/images/harley-davidson/fat boy/red.JPG",
+                        "/images/harley-davidson/fat boy/silver.JPG",
+                        "/images/harley-davidson/fat boy/blue.JGP",
+                        "/images/harley-davidson/fat boy/black.JPG"
                     }
                 },
                 new Motor
@@ -492,7 +492,7 @@ namespace PE1.Webshop.Domain
                     Price=13795,
                     Image = new List<string>
                     {
-                        "/images/harley davidson/softail standard/black.JPG"
+                        "/images/harley-davidson/softail standard/black.JPG"
                     }
                 },
                 new Motor
@@ -515,9 +515,9 @@ namespace PE1.Webshop.Domain
                     Price=25100,
                     Image = new List<string>
                     {
-                        "/images/harley davidson/road king/black.JPG",
-                        "/images/harley davidson/road king/red.JPG",
-                        "/images/harley davidson/road king/white.JPG"
+                        "/images/harley-davidson/road king/black.JPG",
+                        "/images/harley-davidson/road king/red.JPG",
+                        "/images/harley-davidson/road king/white.JPG"
                     }
                 },
                 //BMW

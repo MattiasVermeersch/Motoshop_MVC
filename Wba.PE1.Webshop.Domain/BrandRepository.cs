@@ -42,7 +42,7 @@ namespace PE1.Webshop.Domain
                 {
                     Id=4,
                     Name="Harley-Davidson",
-                    Logo= "/images/harley_davidson/logo.jpg",
+                    Logo= "/images/harley-davidson/logo.jpg",
                     Contactpage="https://www.harley-davidson.com/be/nl/customer-service/contact-us.html",
                     Homepage="https://www.harley-davidson.com/be/nl/index.html"
                 },
