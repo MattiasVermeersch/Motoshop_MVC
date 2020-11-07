@@ -12,7 +12,7 @@
 <table class="table text-center">
     <tr>
         <td colspan="4">
-             <img id="imgMotor" src="@Model.Motor.Image.First()" alt="@Model.Motor.Brand.Name @Model.Motor.Name" height="500" />
+             <img class="img-responsive" style="margin: 0 auto" id="imgMotor" src="@Model.Motor.Image.First()" alt="@Model.Motor.Brand.Name @Model.Motor.Name" height="500" />
         </td>
     </tr>
     <tr>
@@ -23,7 +23,7 @@
             <td>
                 <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-primary btn-lg active" id="@color.Name">
-                        <input type="radio" name="colors" checked> @color.Name
+                        <input type="radio" name="colors" value="@color.Name" checked> @color.Name
                     </label><br />
                 </div>
             </td>
@@ -33,7 +33,7 @@
             <td>
                 <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-info btn-lg" id="@color.Name">
-                        <input type="radio" name="colors"> @color.Name
+                        <input type="radio" name="colors" value="@color.Name"> @color.Name
                     </label><br />
                 </div>
             </td>

@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-var imgMotor, radColors;
+var imgMotor, lblColors, btnColors, colorId;
 var inputName, inputBrand
 
 window.addEventListener('load',Initialize);
@@ -14,22 +14,27 @@ function BindElements() {
     inputBrand = document.querySelector("#inputBrand");
     inputName = document.querySelector("#inputName");
     imgMotor = document.querySelector("#imgMotor");
-    radColors = document.querySelectorAll('label');
+    lblColors = document.querySelectorAll('label');
+    btnColors = document.querySelectorAll('input[name="colors"]');
 }
 
 function AddEvents() {
-    if (radColors.length > 1) {
-        for (let i = 0; i < radColors.length; i++) {
-            const element = radColors[i];
-            element.addEventListener('click', ChangeColor);
-            //console.log(element);
+    if (lblColors.length > 1) {
+        for (let i = 0; i < lblColors.length; i++) {
+            const lbl = lblColors[i];
+            lbl.addEventListener('click', ChangeColor);
         }
     }
-    
 }
 
 function ChangeColor() {
     let brand, motor, color;
+
+    for (var j = 0; j < lblColors.length; j++) {
+        const label = lblColors[j];
+        label.setAttribute('class', 'btn btn-info btn-lg');
+    }
+
     brand = inputBrand.value.toLowerCase();
     motor = inputName.value.toLowerCase();
     color = this.id.toLowerCase();
@@ -38,6 +43,16 @@ function ChangeColor() {
 
     imgMotor.setAttribute('src', path);
 
-        
-    
+    this.setAttribute('class', 'btn btn-primary btn-lg active');
+    colorId = this.id;
+    ChangeChecked();
+}
+
+function ChangeChecked() {
+    for (var i = 0; i < btnColors.length; i++) {
+        const button = btnColors[i];
+        if (colorId == button.value) {
+            button.checked = true;
+        }
+    }
 }
